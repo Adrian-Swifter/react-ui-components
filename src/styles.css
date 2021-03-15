@@ -1,4 +1,25 @@
 .App {
-  font-family: sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-align: center;
+}
+/*Accordion*/
+.acc_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ce82ff;
+  padding: 0 1em;
+  border-radius: 7px 7px 0 0;
+  cursor: pointer;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.acc_content {
+  margin: 0;
+  padding: 1em;
+  text-align: left;
+  background-color: #1CB0F6;
+  color: #fff;
+  border-radius: 0 0 7px 7px;
 }
