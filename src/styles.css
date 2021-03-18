@@ -13,6 +13,7 @@
   cursor: pointer;
   color: #ffffff;
   letter-spacing: 1px;
+  user-select: none;
 }
 
 .acc_content {
@@ -22,4 +23,7 @@
   background-color: #1cb0f6;
   color: #fff;
   border-radius: 0 0 7px 7px;
+  transition: transform 0.3s ease;
+  transform-origin: top;
+  user-select: none;
 }
