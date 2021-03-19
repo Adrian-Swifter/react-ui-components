@@ -3,7 +3,7 @@ import AccordionContent from "./AccordionContent";
 import { useState } from "react";
 
 function AccordionRib(props) {
-  const [opened, setToOpen] = useState(false);
+  const [opened, setToOpen] = useState(true);
 
   const strechTheAccordionRib = () => {
     setToOpen(!opened);
