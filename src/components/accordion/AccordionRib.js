@@ -1,14 +1,21 @@
 import AccordionHeader from "./AccordionHeader";
 import AccordionContent from "./AccordionContent";
+import { useState } from "react";
 
 function AccordionRib(props) {
+  const [opened, setToOpen] = useState(false);
+
+  const strechTheAccordionRib = () => {
+    setToOpen(!opened);
+  };
+
   return (
     <div className="acc_single">
       <AccordionHeader
-        opened={props.opened}
-        strechTheAccordionRib={props.strechTheAccordionRib}
+        opened={opened}
+        strechTheAccordionRib={strechTheAccordionRib}
       />
-      <AccordionContent opened={props.opened} />
+      <AccordionContent opened={opened} />
     </div>
   );
 }
