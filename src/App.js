@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <h1>React UI Components</h1>
       <Accordion />
-      {/* <Card /> */}
+      <Card />
     </div>
   );
 }
