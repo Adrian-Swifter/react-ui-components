@@ -1,6 +1,12 @@
 .App {
   font-family: "Oxygen", sans-serif;
 }
+
+h3,
+p {
+  margin: 10px 0;
+  padding: 0;
+}
 /*Accordion*/
 .acc_header {
   display: flex;
@@ -25,4 +31,50 @@
   transition: transform 0.3s ease;
   transform-origin: top;
   user-select: none;
+}
+
+/* Card */
+
+.card_wrapper {
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card_image_wrapper {
+  margin-right: 20px;
+}
+
+.card_footer {
+  padding: 0 20px 15px;
+}
+
+.card_footer_text {
+  font-size: 0.875rem;
+}
+
+.card_footer_btn_wrapper button {
+  margin-right: 20px;
+  border: none;
+  background-color: #89e219;
+  color: white;
+  font-family: inherit;
+  padding: 5px 30px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card_wrapper {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card_wrapper:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
