@@ -8,8 +8,10 @@ function CardHeader(props) {
         <FontAwesomeIcon icon={faIdCard} color="#ce82ff" size="2x" />
       </div>
       <div className="card_header_text_wrapper">
-        <h3>Primary text</h3>
-        <p>Secondary text</p>
+        <h3>
+          {props.firstName} {props.lastName}
+        </h3>
+        <p>{props.email}</p>
       </div>
     </header>
   );

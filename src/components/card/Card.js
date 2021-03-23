@@ -5,9 +5,13 @@ import CardFooter from "./CardFooter";
 function Card(props) {
   return (
     <div className="card_wrapper">
-      <CardHeader users={props.users}/>
-      <CardBody users={props.users}/>
-      <CardFooter users={props.users}/>
+      <CardHeader
+        firstName={props.firstName}
+        lastName={props.lastName}
+        email={props.email}
+      />
+      <CardBody avatar={props.avatar} />
+      <CardFooter />
     </div>
   );
 }

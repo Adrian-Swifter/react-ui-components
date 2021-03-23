@@ -1,11 +1,7 @@
-function CardBody() {
+function CardBody(props) {
   return (
     <main>
-      <img
-        style={{ maxWidth: "100%" }}
-        src="https://images.unsplash.com/photo-1526660690293-bcd32dc3b123?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw"
-        alt="puppy"
-      />
+      <img style={{ maxWidth: "100%" }} src={props.avatar} alt="User avatar" />
     </main>
   );
 }
